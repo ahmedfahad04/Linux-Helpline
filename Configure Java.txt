@@ -1,0 +1,77 @@
+
+# Install java SE-16 on ubuntu:
+Step - 1: Download Java SE 16(debian): https://www.oracle.com/java/technologies/javase-jdk16-downloads.html
+Step - 2: run these following commands on terminal (open terminal where the Jdk donwloaded)
+
+	sudo dpkg -i jdk-16.0.2_linux-x64_bin.deb
+	sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.2/bin/java 1
+	sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-16.0.2/bin/javac 1
+	java --version 
+
+Note: replace jdk-16.0.2 in terminal commands with your current jdk version
+BINGO!! you are done installing java on our system.
+
+-----------------------------------------------------------------------------------------------------------------
+
+# Install JavaFx on ubuntu: 
+Step - 1: Download javafx-16 Linux SDK: https://gluonhq.com/products/javafx/
+Step - 2: type the following commands on terminal [Replace "javafx-sdk-16" with your relevant sdk version]
+	
+	sudo apt-get install unzip
+	unzip openjfx-16_linux-x64_bin-sdk.zip	
+	sudo cp -R javafx-sdk-16 /usr/lib/jvm
+	
+	
+
+*** For IntellIJ do the following steps:
+	>> Open IntellIJ and create a Javafx project. Then goto settings->Project Structure->Library
+	   Then click the plus sign and select java. Then goto usr/lib/jvm/javafx-sdk-16/lib and click ok.
+	 
+	>> Then create a module-info.java file under src directory and type the below lines
+	
+	module <your-project-name> {
+	    requires javafx.fxml;
+	    requires javafx.base;
+	    requires javafx.controls;
+	    requires AnimateFX;
+	}
+	
+	
+*** For Apache Netbeans do the following task after completing Step-3
+	>> Open your project and Goto File -> Project Properties
+	>> Goto Run -> VM Options. Here in VM Options enter the following line
+	
+	--module-path "/usr/lib/jvm/javafx-sdk-16/lib" --add-modules=javafx.controls,javafx.fxml 
+	
+	>> replace "/usr/lib/jvm/javafx-sdk-16/lib" with your javafx lib folder location
+	>> Then goto Build -> Compiling and remove the tick mark of "Compile on Save". Its a must
+
+
+
+
+BINGO!! your are good to go with javafx
+
+-----------------------------------------------------------------------------------------------------------------
+
+# Install Scenebuilder on ubuntu:
+Step - 1: Download Scenebuilder: https://gluonhq.com/products/scene-builder/thanks/?dl=https://download2.gluonhq.com/scenebuilder/16.0.0/install/linux/SceneBuilder-16.0.0.deb 
+
+Step - 2: run the following commands where you donwloaded the .deb file:
+	
+	  sudo dpkg -i SceneBuilder-16.0.0.deb
+	  sudo apt-get install -f
+	  
+BINGO!! Now you can find your scene builder the app list
+
+
+-----------------------------------------------------------------------------------------------------------------
+ 
+# Completely Uninstall Java from ubuntu:
+https://askubuntu.com/questions/84483/how-to-completely-uninstall-java
+
+Then also delete the jvm in usr/lib/jvm
+
+
+
+
+Happy Coding!
