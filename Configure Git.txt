@@ -8,7 +8,9 @@ Step - 1: Run the following command on terminal to install git in your system
 if it prints something like this "git version 2.33.0" it means installation done.
 
 
-*** The thing you need to know is, if you are not interested in establishing ssh connection what you will face is, everytime you push anything to any of your git repository you will give your username and password. But problem is password authenctication is not avail now. So you have to continue with  personal access token. To do so,
+*** The thing you need to know is, if you are not interested in establishing ssh connection what you will face is, 
+everytime you push anything to any of your git repository you will give your username and password. But problem is 
+password authenctication is not avail now. So you have to continue with  personal access token. To do so,
 
 	>> Goto your github profile and then Setting -> Developer Option -> Personal Access Token and click on "Generate New Token"
 	>> Then select the check boxes to give enough permission and also select a duration of that token. Then click Generate Token below.
@@ -25,19 +27,22 @@ Step - 2: Run the following command on terminal to set up ssh connection with yo
 		$ eval "$(ssh-agent -s)"
 		$ ssh-add ~/.ssh/id_rsa
 		$ ssh -T git@github.com
-		# here you will be asked "Are you sure you want to continue connecting (yes/no/[fingerprint])?", you should type onlye "yes"
+		# here you will be asked "Are you sure you want to continue 
+		connecting (yes/no/[fingerprint])?", you should type onlye "yes"
 		
 		
 		$ sudo apt-get update
 		$ sudo apt-get install xclip
-		# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+		# Downloads and installs xclip. If you don't have `apt-get`, 
+		you might need to use another installer (like `yum`)
 
 		$ xclip -selection clipboard < ~/.ssh/id_rsa.pub
 		# Copies the contents of the id_rsa.pub file to your clipboard
 		
 ssh key generation done. In next step you will just need to add the key to your github accoutn
 
-Step - 3: Now log in to your github profile and goto Settings -> SSH and GPG Keys. Then in the right corner click on "New SSH Key". Then give a title name and below in the Key box press ctrl+v to paste your ssh key.
+Step - 3: Now log in to your github profile and goto Settings -> SSH and GPG Keys. Then in the right 
+corner click on "New SSH Key". Then give a title name and below in the Key box press ctrl+v to paste your ssh key.
 
 
 For detailed info,
