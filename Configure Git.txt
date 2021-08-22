@@ -40,5 +40,5 @@ Add a new ssh new key:
 https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account 
 
 
-BINGO!! your are done
+BINGO!! your are done. Now you can play with github.
 
