@@ -7,7 +7,16 @@ Step - 1: Run the following command on terminal to install git in your system
 		
 if it prints something like this "git version 2.33.0" it means installation done.
 
-Step - 2: Run the following command on terminal to set up ssh connection with your github accout
+
+*** The thing you need to know is, if you are not interested in establishing ssh connection what you will face is, everytime you push anything to any of your git repository you will give your username and password. But problem is password authenctication is not avail now. So you have to continue with  personal access token. To do so,
+
+	>> Goto your github profile and then Setting -> Developer Option -> Personal Access Token and click on "Generate New Token"
+	>> Then select the check boxes to give enough permission and also select a duration of that token. Then click Generate Token below.
+	>> Then Copy the token and paste it when you are asked to give password while pushing to your repository. Once you provide the 
+	   newly generated key, after that you wont need to give it any more. Rather it will automatically give you access to push anything
+	   without asking any user name and password.
+
+Step - 2: Run the following command on terminal to set up ssh connection with your github account
 		
 		$ ssh-keygen -t rsa
 		# just press enter to save the file in default location
@@ -38,6 +47,8 @@ https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-
 
 Add a new ssh new key:
 https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account 
+
+
 
 
 BINGO!! your are done. Now you can play with github.
