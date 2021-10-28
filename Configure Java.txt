@@ -37,7 +37,7 @@ Step - 2: type the following commands on terminal [Replace "javafx-sdk-16" with 
 	}
 	
 	
-*** For Apache Netbeans do the following task after completing Step-3
+*** For Apache Netbeans do the following task after completing Step-2
 	>> Open your project and Goto File -> Project Properties
 	>> Goto Run -> VM Options. Here in VM Options enter the following line
 	
