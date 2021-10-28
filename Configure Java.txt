@@ -1,5 +1,8 @@
 
 # Install java SE-16 on ubuntu:
+** You may also look here https://www.linuxcapable.com/how-to-install-java-17-lts-jdk-17-on-ubuntu-20-04/ for installing java-17-lts into your system **
+
+
 Step - 1: Download Java SE 16(debian): https://www.oracle.com/java/technologies/javase-jdk16-downloads.html
 Step - 2: run these following commands on terminal (open terminal where the Jdk donwloaded)
 
