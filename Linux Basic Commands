@@ -18,15 +18,18 @@
 >> chmod 673 fileName (to change the permission status of fileName)
 >> chmod -x fileName (to make fileName executable)
 >> grep keyword fileName (to search the keyword in fileName)
->> grep --text picoCTF static ( here --text means converting the binary file to text file and seach the picoCTF word in 'static' file)
+>> grep --text picoCTF static (here --text means converting the binary file to text file and seach the picoCTF word in 'static' file)
 
 
 -------- Necessary Terminologies --------
 
 Code for changing permission of any file: 
-1 execute
-2 write
-4 read
+
+Code 	Nmemonics
+----	---------
+1 	execute
+2 	write
+4 	read
 
 now for example:
 You want to assign
