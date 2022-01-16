@@ -58,3 +58,22 @@ https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-
 
 BINGO!! your are done. Now you can play with github.
 
+
+------------------------- A bonus point for Configuring GIT ---------------------
+
+To permanently store the git token value run the following commands as  follows: 
+
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+
+[several days later]
+$ git push http://example.com/repo.git
+[your credentials are used automatically]
+
+
+Bingo!! From now you don't have to enter the git token each time when you push into your repositories.
+
+
+
