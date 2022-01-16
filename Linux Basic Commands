@@ -42,3 +42,19 @@ then the equivalent code would be
 admin - 4+2=6
 group - 1+2+4=7
 public - 2+1=3
+
+
+
+------------- CTF Tricks ------------------
+
+* Press Tab button multiple time to get deeper into the file hierarchy (means directory -> subdirectory -> subdirectory -> ....) 
+
+* For converting between number base use the following commands:
+	> echo 'ibase=16; obase=2; 70' | bc 	( this commands convert a Hexadecimal number to Binary number
+	> echo 'ibase=16; 70' | bc 		(this commands convert a Hexadecimal number to Decimal number and this decimal conversion is more 							recommended than that of previous one)
+	
+* nc jupiter.challenges.picoctf.org 41120 ( here jupiter.... is a server name and 41120 is the port number. using nc we connect the server using port)
+	
+	
+	
+	
