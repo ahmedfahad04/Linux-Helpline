@@ -1,0 +1,12 @@
+1. gcc/g++ is not working
+
+-> This might not work when you run any C++ program initially, but for C programs it should act as alright. You should run the following commands:
+
+	> sudo apt-get install gcc
+	> sudo apt-get install g++
+	> sudo apt-get install build-essential
+	
+Then its recommended to restart and your pc and check again that if gcc/g++ is perfectly installed or not by these commands:
+
+	> gcc --version
+	> g++ --version
