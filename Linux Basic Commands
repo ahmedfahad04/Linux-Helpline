@@ -54,6 +54,8 @@ public - 2+1=3
 	> echo 'ibase=16; 70' | bc 		(this commands convert a Hexadecimal number to Decimal number and this decimal conversion is more 							recommended than that of previous one)
 	
 * nc jupiter.challenges.picoctf.org 41120 ( here jupiter.... is a server name and 41120 is the port number. using nc we connect the server using port)
+
+* You have to learn about converting number betweeen different bases (https://hackthematrixforlife.wordpress.com/houseplant2020-ctf-writeup/)
 	
 	
 	
